@@ -22,20 +22,20 @@ Want it rounded? Check it:
 
 How about a input with a label? So simple:
 
-`<label>
+```<label>
     <span class="label-icon"><i class="fa fa-gbp"></i></span>
     <input class="default-input rounded label-input" type="text" placeholder="Default Text">
-  </label>`
+  </label>```
   
   
 One thing you might like is this custom dropdown menu:
 
-`<select class="default-input option-menu">
+```<select class="default-input option-menu">
     <option value="option-1">Option 1</option>
     <option value="option-2">Option 2</option>
     <option value="option-3">Option 3</option>
     <option value="option-4">Option 4</option>
-  </select>`
+  </select>```
   
   
 #### Buttons
