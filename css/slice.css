@@ -5,6 +5,7 @@
 =============================*/
 
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
 
 * {
   margin:0;
@@ -53,6 +54,7 @@ textarea:focus {
   outline: none;
 }
 
+/* Default Inputs */
 .default-input {
   padding:0.8em;
   border:2px solid #ccc;
@@ -65,6 +67,11 @@ textarea:focus {
   border-radius: 0px;
 }
 
+.default-input:focus {
+  border:2px solid #999;
+}
+
+/* Rounded Inputs */
 .rounded {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -72,6 +79,7 @@ textarea:focus {
   overflow:hidden;
 }
 
+/* Input Widths */
 .half {
   width:50%;
 }
@@ -80,10 +88,7 @@ textarea:focus {
   width:100%;
 }
 
-.default-input:focus {
-  border:2px solid #999;
-}
-
+/* Placeholder */
 .default-input::-webkit-input-placeholder {
   color: #ccc;
 }
@@ -100,6 +105,7 @@ textarea:focus {
   color: #ccc;
 }
 
+/* Label with Icons */
 .label-icon {
   background:#f4f4f4;
   border-right:1px solid rgba(0,0,0,.1);
@@ -116,12 +122,14 @@ textarea:focus {
   padding-left:60px;
 }
 
+/* Option Menu / Select Menu */
 .option-menu {
   background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAlCAYAAAD/Tp9wAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAdBJREFUeNrs2L1WwjAUAOCkeQEegbUbbo6wOZpHYHRk9BHcHB0Z3aqjk4xudHSEN8A38F4Nh2hPm7T5T3vPKQTapJfvpG24lHO+J4QsyBRy1AW8rLAxWVxQ0IRiC2bNDN7ep5nzi1JV1Ymev5lwLij4gcp7BA7ec+YjQznAdnVGwSjkvWIHh+00IpSf3yyjNGaMNHMW4rKajQAFL5/Gw4e29RgBTitKJ0zmOJ0ojXvM/xAd1xnOlnUXCgZTjfAJUZblEZq3GaE8qw5iOiOBTZ0JDqJsdQ5kuiNmgKON0gtGwvmC5k1iKBtAeerTgfU9A+B8AM48ob8OW0C579uJDTkT4LwmgoMog56qbOgZE8AZjGIEEzmOEYpy5asbsELG1fEyEpQdoKxMByksJcNJHFXAWuRiHNRWRhEUuv4UmqKBCYxjFcU6TCAc6yhOYDyXK5Tlg6hgPOE4Q3EK4xjHKYpzGEc4zlG8wAicpcCxEYiyc50z8wEDfx0Olmo5WFN58ZGzFxiBY1ro6lVoSgbGEMcrineYgTjeUYLASDj4lLpWHPoIKA8hcgwCI3DeFLUcrKnchcovGIzAaSt0GReakoZpwQmOElXAIrDCLZZ8vgUYANCa63k2/DsoAAAAAElFTkSuQmCC') no-repeat;
   background-size:15px;
   background-position:right 20px top 20px;
 }
 
+/* Buttons */
 .btn {
   border:0;
   padding:10px;
@@ -137,4 +145,62 @@ textarea:focus {
   padding:10px 15px;
   letter-spacing: 0;
   text-transform: none;
+}
+
+/* Legend */
+fieldset {
+  padding:20px;
+  border:1px solid rgba(0,0,0,.1);
+}
+
+legend {
+  margin:0 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size:13px;
+  font-weight:bold;
+}
+
+
+/* Radio Button */
+input[type="radio"] {
+  width:32px;
+  height:32px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+
+input[type="radio"]:checked:after {
+  position: absolute;
+  content:"";
+  background:#fff;
+  width:50%;
+  height:50%;
+  top:25%;
+  left:25%;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  width:32px;
+  height:32px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+input[type="checkbox"]:checked:after {
+  position: absolute;
+  color:#fff;
+  content:"\f00c";
+  font-family: FontAwesome;
+  font-size:1.45em;
+  width:50%;
+  height:50%;
+  top:25%;
+  left:25%;
 }

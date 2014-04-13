@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width">
   <title>Slice &#8212; A elegant collection of form components</title>
   <link rel="stylesheet" type="text/css" href="css/slice.css">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 
   <style>
     body {
       width:90%;
       max-width:500px;
       margin:50px auto;
+      padding-bottom:200px;
     }
 
     .divider {
@@ -49,9 +49,11 @@
 
   <!-- Default Text Inputs -->
   <input class="default-input" type="text" placeholder="Default Text">
-
-  <!-- Rounded Inputs -->
   <input class="default-input rounded" type="text" placeholder="Default Rounded Text">
+
+  <!-- Textarea -->
+  <textarea placeholder="Default Textarea" class="default-input" cols="30" rows="5"></textarea>
+  <textarea placeholder="Default Textarea" class="default-input rounded" cols="30" rows="5"></textarea>
 
   <!-- Input with Labels -->
   <label>
@@ -168,6 +170,39 @@
   <button class="btn yellow rounded btn-icon"><i class="fa fa-star"></i></button>
   <button class="btn purple rounded btn-icon"><i class="fa fa-star"></i></button>
   <button class="btn dark rounded btn-icon"><i class="fa fa-star"></i></button>
+
+  <div class="divider"></div>
+
+  <!-- Radio Button -->
+  <input class="blue" type="radio" name="hi">
+  <input class="green" type="radio" name="hi" checked>
+  <input class="red" type="radio" name="hi">
+  <input class="orange" type="radio" name="hi">
+  <input class="yellow" type="radio" name="hi">
+  <input class="purple" type="radio" name="hi">
+  <input class="dark" type="radio" name="hi">
+
+  <div class="divider"></div>
+
+  <!-- Checkbox -->
+  <input class="blue" type="checkbox" name="hi">
+  <input class="green" type="checkbox" name="hi" checked>
+  <input class="red" type="checkbox" name="hi">
+  <input class="orange" type="checkbox" name="hi">
+  <input class="yellow" type="checkbox" name="hi">
+  <input class="purple" type="checkbox" name="hi">
+  <input class="dark" type="checkbox" name="hi">
+
+  <div class="divider"></div>
+
+  <!-- Legend -->
+  <fieldset>
+  <legend>Legend:</legend>
+    <input class="default-input rounded" type="text" placeholder="Default Text">
+    <input class="default-input rounded" type="text" placeholder="Default Rounded Text">
+    <textarea class="default-input" cols="30" rows="10"></textarea>
+    <button class="btn rounded blue full">Submit</button>
+  </fieldset>
 
 </body>
 </html>
