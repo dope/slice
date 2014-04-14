@@ -16,10 +16,24 @@
   box-sizing: border-box;
 }
 
+/* Clearfix */
+.cf:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
 input,
 textarea {
   -webkit-appearance: none;
+  -moz-appearance: none;
   border-radius: 0;
+}
+
+textarea {
+  resize:none;
+  max-width:100%;
+  height:150px;
 }
 
 /* Reset for Input elements */
@@ -35,6 +49,7 @@ input[type="button"] {
   border:0;
   outline:none;
   -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 input:focus,
@@ -67,15 +82,6 @@ textarea:focus {
   overflow:hidden;
 }
 
-/* Input Widths */
-.half {
-  width:50%;
-}
-
-.full {
-  width:100%;
-}
-
 /* Placeholder */
 .default-input::-webkit-input-placeholder {
   color: #ccc;
@@ -97,11 +103,10 @@ textarea:focus {
 .label-icon {
   color:rgba(0,0,0,.6);
   position:absolute;
+  bottom:-15px;
   display:block;
   font-size:1.5em;
   padding:8px 15px;
-  margin-top:2px;
-  margin-left:2px;
 }
 
 .label-input {
@@ -113,6 +118,8 @@ textarea:focus {
   background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAlCAYAAAD/Tp9wAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAdBJREFUeNrs2L1WwjAUAOCkeQEegbUbbo6wOZpHYHRk9BHcHB0Z3aqjk4xudHSEN8A38F4Nh2hPm7T5T3vPKQTapJfvpG24lHO+J4QsyBRy1AW8rLAxWVxQ0IRiC2bNDN7ep5nzi1JV1Ymev5lwLij4gcp7BA7ec+YjQznAdnVGwSjkvWIHh+00IpSf3yyjNGaMNHMW4rKajQAFL5/Gw4e29RgBTitKJ0zmOJ0ojXvM/xAd1xnOlnUXCgZTjfAJUZblEZq3GaE8qw5iOiOBTZ0JDqJsdQ5kuiNmgKON0gtGwvmC5k1iKBtAeerTgfU9A+B8AM48ob8OW0C579uJDTkT4LwmgoMog56qbOgZE8AZjGIEEzmOEYpy5asbsELG1fEyEpQdoKxMByksJcNJHFXAWuRiHNRWRhEUuv4UmqKBCYxjFcU6TCAc6yhOYDyXK5Tlg6hgPOE4Q3EK4xjHKYpzGEc4zlG8wAicpcCxEYiyc50z8wEDfx0Olmo5WFN58ZGzFxiBY1ro6lVoSgbGEMcrineYgTjeUYLASDj4lLpWHPoIKA8hcgwCI3DeFLUcrKnchcovGIzAaSt0GReakoZpwQmOElXAIrDCLZZ8vgUYANCa63k2/DsoAAAAAElFTkSuQmCC') no-repeat;
   background-size:15px;
   background-position:right 20px top 20px;
+  text-indent: 0.01px;
+  text-overflow: '';
 }
 
 /* Buttons */
@@ -174,6 +181,8 @@ input[type="radio"] {
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   border-radius: 100px;
+
+
 }
 
 input[type="radio"]:checked:after {
@@ -208,4 +217,30 @@ input[type="checkbox"]:checked:after {
   height:50%;
   top:25%;
   left:25%;
+}
+
+/* Shortcuts / Helpers */
+.half {
+  width:50%;
+}
+
+.full {
+  width:100%;
+}
+
+.float-left {
+  float:left;
+}
+
+
+.float-right {
+  float:right;
+}
+
+.padding-big {
+  padding:10px;
+}
+
+.padding-bigger {
+  padding:20px;
 }
