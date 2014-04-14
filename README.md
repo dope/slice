@@ -26,6 +26,7 @@ Getting started couldn't be easier — once you've added the stylesheet then all
 
 #####The Mark up
 Default text input `<input type="text" class="default-input" />`
+
 Default textarea `<textarea class="default-input">Hey</textarea>`
 
 Text input with a label
@@ -58,7 +59,9 @@ Slice also has some color options which you can call by just adding the followin
 - Dark
 
 Checkbox `<input class="blue" type="checkbox" name="hi">`
+
 Radio Button `<input class="blue" type="radio" name="hi">`
+
 ###Credits:
 Colors by [Flat UI](http://flatuicolors.com)
 Icons by [Font Awesome](http://fontawesome.io)
