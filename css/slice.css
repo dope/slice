@@ -244,3 +244,48 @@ input[type="checkbox"]:checked:after {
 .padding-bigger {
   padding:20px;
 }
+
+.rounded {
+  border-radius:6px;
+}
+
+.full-rounded {
+  border-radius: 100px;
+}
+
+/* Typography */
+h1 {
+  font-size:50px;
+  margin-bottom:10px;
+}
+
+h2 {
+  font-size:40px;
+  margin-bottom:10px;
+}
+
+h3 {
+  font-size:30px;
+  margin-bottom:5px;
+}
+
+h4 {
+  font-size:20px;
+  margin-bottom:5px;
+}
+
+h5 {
+  font-size:15px;
+  margin-bottom:5px;
+}
+
+h6 {
+  font-size:12px;
+  margin-bottom:5px;
+}
+
+p {
+  font-size: 15px;
+  margin-bottom:30px;
+  line-height:1.4em;
+}
