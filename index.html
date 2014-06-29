@@ -3,47 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width">
-  <title>Slice &#8212; An elegant collection of web components</title>
-  <link rel="stylesheet" type="text/css" href="css/slice.min.css">
+  <title>Slice</title>
+  <link rel="stylesheet" type="text/css" href="css/slice.css">
+  <link rel="stylesheet" type="text/css" href="css/demo.css">
 
-  <style>
-    body {
-      width:90%;
-      margin:50px auto;
-      padding-bottom:200px;
-    }
-
-    .divider {
-      margin-top:30px;
-    }
-
-    .splitter {
-      margin-bottom:40px;
-      padding-bottom:10px;
-      border-bottom:5px solid rgba(0,0,0,.1);
-    }
-
-    a,a:visited {
-      color:#777;
-      font-size:11px;
-      float:right;
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      padding-top:15px;
-      padding-bottom:3px;
-    }
-
-    a:hover {
-      color:#000;
-    }
-  </style>
 </head>
 <body>
 
   <hgroup>
-    <h1>Slice <a href="http://github.com/dope/slice">View Source</a></h1>
-    <h3 class="splitter">An elegant collection of web components</h3>
+    <h1>Slice</h1>
+    <h3 class="splitter">A simple collection of web components</h3>
   </hgroup>
 
   <!-- Default Text Inputs -->
@@ -55,14 +24,9 @@
   <textarea placeholder="Default Textarea" class="default-input rounded" cols="30" rows="5"></textarea>
 
   <!-- Input with Labels -->
-  <label>
+  <label class="cf">
     <span class="label-icon"><i class="fa fa-user"></i></span>
     <input class="default-input label-input" type="text" placeholder="Default Text">
-  </label>
-
-  <label>
-    <span class="label-icon"><i class="fa fa-gbp"></i></span>
-    <input class="default-input rounded label-input" type="text" placeholder="Default Text">
   </label>
 
   <!-- Dropdown menus -->
@@ -223,6 +187,14 @@
 
   <h6>Header 6</h6>
   <p>This is a paragraph.</p>
+
+
+
+
+  <!-- source button -->
+  <hr>
+  <br>
+  <a class="btn float-center green color-light" href="http://github.com/dope/slice">View Source</a>
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
