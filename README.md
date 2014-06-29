@@ -63,5 +63,4 @@ Checkbox `<input class="blue" type="checkbox" name="hi">`
 Radio Button `<input class="blue" type="radio" name="hi">`
 
 ###Credits:
-Colors by [Flat UI](http://flatuicolors.com)
 Icons by [Font Awesome](http://fontawesome.io)

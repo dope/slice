@@ -1,0 +1,29 @@
+/**
+* For Demo Purposes Only.
+**/
+
+body {
+  width:90%;
+  margin:50px auto;
+}
+
+.divider {
+  margin-top: 30px;
+}
+
+.splitter {
+  margin-bottom:40px;
+  padding-bottom:10px;
+  border-bottom:5px solid rgba(0,0,0,.1);
+}
+
+
+a:hover {
+  color:#000;
+}
+
+h3 {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
