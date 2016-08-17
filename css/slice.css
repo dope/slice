@@ -1,48 +1,157 @@
-/*=============================
-* Slice by Joe Richardson
-* V1
+@charset "UTF-8";
+/**
+*
+* Slice v2 — Licensed under MIT
+* Created & maintained by Joe Richardson
+* Documentation can be found in README.md
+* See below for the table of contents.
+*
+**/
+/**
+ * Config
+ * - All things configurable.
+ */
+/*
+*
+* Slice v2
+* Created by @joericho
+*
 * Licensed under MIT
-=============================*/
-
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
-@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
-
+* -------------------
+* Global Configuration
+* -------------------
+*
+*/
+/* Layout */
+/* Type */
+/**
+ * Base (non class stuff)
+ * - Reset
+ * - Color variables
+ * - Forms
+ * - Horizontal rule
+ * - Typography
+ */
+/*
+*
+* Slice v2
+* Created by @joericho
+*
+* Licensed under MIT
+* -------------------
+* Base reset
+* -------------------
+*
+*/
 * {
-  margin:0;
-  padding:0;
-  font-family: "Lato";
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-a, a:visited {
-  text-decoration: none;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
   font-size: 16px;
-}
+  font-family: "Montserrat"; }
 
-/* Clearfix */
-.cf:after {
-  content: "";
-  display: table;
-  clear: both
-}
+a {
+  text-decoration: none; }
 
+/*
+*
+* Slice v2
+* Created by @joericho
+*
+* Licensed under MIT
+* -------------------
+* Colors
+* -------------------
+*
+*/
+/* loop colors */
+.c-blue {
+  color: #00A4EE !important; }
+
+/* loop backgrounds */
+.bg-blue {
+  background: #00A4EE !important; }
+
+/* loop colors */
+.c-green {
+  color: #5AAC7B !important; }
+
+/* loop backgrounds */
+.bg-green {
+  background: #5AAC7B !important; }
+
+/* loop colors */
+.c-red {
+  color: #A9071E !important; }
+
+/* loop backgrounds */
+.bg-red {
+  background: #A9071E !important; }
+
+/* loop colors */
+.c-orange {
+  color: #DC4E00 !important; }
+
+/* loop backgrounds */
+.bg-orange {
+  background: #DC4E00 !important; }
+
+/* loop colors */
+.c-yellow {
+  color: #FACB47 !important; }
+
+/* loop backgrounds */
+.bg-yellow {
+  background: #FACB47 !important; }
+
+/* loop colors */
+.c-purple {
+  color: #00A4EE !important; }
+
+/* loop backgrounds */
+.bg-purple {
+  background: #00A4EE !important; }
+
+/* loop colors */
+.c-black {
+  color: #913D88 !important; }
+
+/* loop backgrounds */
+.bg-black {
+  background: #913D88 !important; }
+
+/* loop colors */
+.c-white {
+  color: #182945 !important; }
+
+/* loop backgrounds */
+.bg-white {
+  background: #182945 !important; }
+
+/*
+*
+* Slice v2
+* Created by @joericho
+*
+* Licensed under MIT
+* -------------------
+* Base form styles
+* -------------------
+*
+*/
 input,
 textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
-  border-radius: 0;
-}
+  appearance: none;
+  border-radius: 0; }
 
 textarea {
-  resize:none;
-  max-width:100%;
-  height:150px;
-}
+  resize: none;
+  max-width: 100%;
+  height: 150px; }
 
 /* Reset for Input elements */
 label,
@@ -58,131 +167,224 @@ input[type="button"] {
   outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-}
+  appearance: none; }
 
 input:focus,
 textarea:focus {
-  outline: none;
-}
+  outline: none; }
 
-/* Default Inputs */
+fieldset {
+  padding: 20px;
+  border: 1px solid rgba(145, 61, 136, 0.1); }
+
+legend {
+  margin: 0 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.7em;
+  font-weight: bold; }
+
+/*
+*
+* Slice v2
+* Created by @joericho
+*
+* Licensed under MIT
+* -------------------
+* Horizontal Rule
+* -------------------
+*
+*/
+hr {
+  background: rgba(145, 61, 136, 0.1);
+  border: 0;
+  height: 1px;
+  margin: 20px 0; }
+
+/*
+*
+* Slice v2
+* Created by @joericho
+*
+* Licensed under MIT
+* -------------------
+* Typography
+* -------------------
+*
+*/
+h1 {
+  font-size: 3.3em;
+  margin-bottom: .3em; }
+
+h2 {
+  font-size: 2.8em;
+  margin-bottom: .3em; }
+
+h3 {
+  font-size: 2.4em;
+  margin-bottom: .3em; }
+
+h4 {
+  font-size: 1.8em;
+  margin-bottom: .3em; }
+
+h5 {
+  font-size: 1.4em;
+  margin-bottom: .3em; }
+
+h6 {
+  font-size: 1.2em;
+  margin-bottom: .3em; }
+
+p {
+  font-size: 1em;
+  margin-bottom: 3em;
+  line-height: 1.4em; }
+
+/**
+ * Tools (mixins, help classes)
+ * - Clearfix
+ * - Placeholder
+ * - Helpers
+ */
+/*
+*
+* Slice v2
+* Created by @joericho
+*
+* Licensed under MIT
+* -------------------
+* Clearfix mixin
+* -------------------
+*
+*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*
+*
+* Slice v2
+* Created by @joericho
+*
+* Licensed under MIT
+* -----------------
+* Placeholder mixin
+* -----------------
+*
+*/
+/*
+*
+* Slice v2
+* Created by @joericho
+*
+* Licensed under MIT
+* -------------------
+* Help classes
+* -------------------
+*
+*/
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.float-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: table; }
+
+.padding-big {
+  padding: 10px; }
+
+.padding-bigger {
+  padding: 20px; }
+
+.rounded {
+  border-radius: 6px;
+  overflow: hidden; }
+
+.rounded-full {
+  border-radius: 100px; }
+
+.blue {
+  background: #00A4EE; }
+
+.green {
+  background: #5AAC7B; }
+
+.red {
+  background: #A9071E; }
+
+.orange {
+  background: #DC4E00; }
+
+.yellow {
+  background: #FACB47; }
+
+.purple {
+  background: #00A4EE; }
+
+.black {
+  background: #00A4EE; }
+
+.white {
+  background: #182945; }
+
+/**
+ * Main components
+ * - Inputs
+ * - Radio Buttons
+ * - Checkboxes
+ * - Buttons
+ * - Dropdown
+ */
+/*
+*
+* Slice v2
+* Created by @joericho
+*
+* Licensed under MIT
+* -------------------
+* Default Inputs
+* -------------------
+*
+*/
 .default-input {
   padding: 0.8em;
-  border: 1px solid rgba(0,0,0,.1);
-  font-size: .8em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.8em;
   width: 100%;
   color: #999;
   margin-bottom: 15px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
   border-radius: 0px;
-}
+  font-family: "Montserrat"; }
+  .default-input:focus {
+    border: 1px solid #999; }
+  .default-input.placeholder {
+    color: #ccc; }
+  .default-input:-moz-placeholder {
+    color: #ccc; }
+  .default-input::-webkit-input-placeholder {
+    color: #ccc; }
 
-.default-input:focus {
-  border: 1px solid #999;
-}
-
-/* Rounded Inputs */
-.rounded {
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-/* Placeholder */
-.default-input::-webkit-input-placeholder {
-  color: #ccc;
-}
-
-.default-input:-moz-placeholder {
-  color: #ccc;
-}
-
-.default-input::-moz-placeholder {
-  color: #ccc;
-}
-
-.default-input:-ms-input-placeholder {
-  color: #ccc;
-}
-
-/* Label with Icons */
-.label-icon {
-  color: rgba(0,0,0,.6);
-  position: absolute;
-  bottom: -15px;
-  display: block;
-  font-size: 1.5em;
-  padding: 8px 15px;
-}
-
-.label-input {
-  padding-left: 60px;
-}
-
-/* Option Menu / Select Menu */
-.option-menu {
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAlCAYAAAD/Tp9wAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAdBJREFUeNrs2L1WwjAUAOCkeQEegbUbbo6wOZpHYHRk9BHcHB0Z3aqjk4xudHSEN8A38F4Nh2hPm7T5T3vPKQTapJfvpG24lHO+J4QsyBRy1AW8rLAxWVxQ0IRiC2bNDN7ep5nzi1JV1Ymev5lwLij4gcp7BA7ec+YjQznAdnVGwSjkvWIHh+00IpSf3yyjNGaMNHMW4rKajQAFL5/Gw4e29RgBTitKJ0zmOJ0ojXvM/xAd1xnOlnUXCgZTjfAJUZblEZq3GaE8qw5iOiOBTZ0JDqJsdQ5kuiNmgKON0gtGwvmC5k1iKBtAeerTgfU9A+B8AM48ob8OW0C579uJDTkT4LwmgoMog56qbOgZE8AZjGIEEzmOEYpy5asbsELG1fEyEpQdoKxMByksJcNJHFXAWuRiHNRWRhEUuv4UmqKBCYxjFcU6TCAc6yhOYDyXK5Tlg6hgPOE4Q3EK4xjHKYpzGEc4zlG8wAicpcCxEYiyc50z8wEDfx0Olmo5WFN58ZGzFxiBY1ro6lVoSgbGEMcrineYgTjeUYLASDj4lLpWHPoIKA8hcgwCI3DeFLUcrKnchcovGIzAaSt0GReakoZpwQmOElXAIrDCLZZ8vgUYANCa63k2/DsoAAAAAElFTkSuQmCC') no-repeat;
-  background-size: 15px;
-  background-position: right 20px top 20px;
-  text-indent: 0.01px;
-  text-overflow: '';
-}
-
-/* Buttons */
-.btn {
-  border: 0;
-  padding: 10px;
-  color: #fff;
-  background: #ccc;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: .7em;
-  margin-bottom: 3px;
-}
-
-/* Main Colours */
-.blue         { background: #00A4EE; }
-.green        { background: #5AAC7B; }
-.red          { background: #A9071E; }
-.orange       { background: #DC4E00; }
-.yellow       { background: #FACB47; }
-.purple       { background: #913D88; }
-.dark         { background: #182945; }
-
-.btn:hover    { opacity:    0.9; }
-
-.btn-icon {
-  font-size: .7em;
-  padding: 10px 15px;
-}
-
-/* Legend */
-fieldset {
-  padding: 20px;
-  border: 1px solid rgba(0,0,0,.1);
-}
-
-legend {
-  margin:0 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size:.7em;
-  font-weight:bold;
-}
-
-
-/* Radio Button */
+/*
+*
+* Slice v2
+* Created by @joericho
+*
+* Licensed under MIT
+* -------------------
+* Radio buttons
+* -------------------
+*
+*/
 input[type="radio"] {
-  width:32px;
-  height:32px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
-
-
-}
+  width: 32px;
+  height: 32px;
+  border-radius: 100px; }
 
 input[type="radio"]:checked:after {
   position: absolute;
@@ -192,19 +394,23 @@ input[type="radio"]:checked:after {
   height: 50%;
   top: 25%;
   left: 25%;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
-}
+  border-radius: 100px; }
 
-/* Checkbox */
+/*
+*
+* Slice v2
+* Created by @joericho
+*
+* Licensed under MIT
+* -------------------
+* Checkbox
+* -------------------
+*
+*/
 input[type="checkbox"] {
   width: 32px;
   height: 32px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
+  border-radius: 5px; }
 
 input[type="checkbox"]:checked:after {
   position: absolute;
@@ -215,100 +421,45 @@ input[type="checkbox"]:checked:after {
   width: 50%;
   height: 50%;
   top: 25%;
-  left: 25%;
-}
+  left: 25%; }
 
-/* Shortcuts / Helpers */
-.half {
-  width: 50%;
-}
-
-.full {
-  width: 100%;
-}
-
-.float-left {
-  float: left;
-}
-
-
-.float-right {
-  float: right;
-}
-
-.float-center {
-  margin-left: auto;
-  margin-right: auto;
-  display: table;
-}
-
-.padding-big {
-  padding: 10px;
-}
-
-.padding-bigger {
-  padding: 20px;
-}
-
-.rounded {
-  border-radius: 6px;
-}
-
-.full-rounded {
-  border-radius: 100px;
-}
-
-.color-light {
-  color: #ffffff;
-}
-
-.color-dark {
-  color: #000000;
-}
-
-
-
-/* Misc Stuff */
-hr {
-  background: rgba(0,0,0,.1);
+/*
+*
+* Slice v2
+* Created by @joericho
+*
+* Licensed under MIT
+* -------------------
+* Buttons
+* -------------------
+*
+*/
+.btn {
   border: 0;
-  height: 1px;
-  margin: 15px 0;
-}
+  padding: 10px;
+  color: #fff;
+  background: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: .7em;
+  margin-bottom: 3px;
+  font-family: "Montserrat"; }
 
-/* Typography */
-h1 {
-  font-size: 3.3em;
-  margin-bottom:. 3em;
-}
-
-h2 {
-  font-size: 2.8em;
-  margin-bottom: .3em;
-}
-
-h3 {
-  font-size: 2.4em;
-  margin-bottom: .3em;
-}
-
-h4 {
-  font-size: 1.8em;
-  margin-bottom: .3em;
-}
-
-h5 {
-  font-size: 1.4em;
-  margin-bottom: .3em;
-}
-
-h6 {
-  font-size:1.2em;
-  margin-bottom:.3em;
-}
-
-p {
-  font-size: 1em;
-  margin-bottom: 3em;
-  line-height: 1.4em;
-}
+/*
+*
+* Slice v2
+* Created by @joericho
+*
+* Licensed under MIT
+* -------------------
+* Option menu
+* -------------------
+*
+*/
+.option-menu {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAlCAYAAAD/Tp9wAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAdBJREFUeNrs2L1WwjAUAOCkeQEegbUbbo6wOZpHYHRk9BHcHB0Z3aqjk4xudHSEN8A38F4Nh2hPm7T5T3vPKQTapJfvpG24lHO+J4QsyBRy1AW8rLAxWVxQ0IRiC2bNDN7ep5nzi1JV1Ymev5lwLij4gcp7BA7ec+YjQznAdnVGwSjkvWIHh+00IpSf3yyjNGaMNHMW4rKajQAFL5/Gw4e29RgBTitKJ0zmOJ0ojXvM/xAd1xnOlnUXCgZTjfAJUZblEZq3GaE8qw5iOiOBTZ0JDqJsdQ5kuiNmgKON0gtGwvmC5k1iKBtAeerTgfU9A+B8AM48ob8OW0C579uJDTkT4LwmgoMog56qbOgZE8AZjGIEEzmOEYpy5asbsELG1fEyEpQdoKxMByksJcNJHFXAWuRiHNRWRhEUuv4UmqKBCYxjFcU6TCAc6yhOYDyXK5Tlg6hgPOE4Q3EK4xjHKYpzGEc4zlG8wAicpcCxEYiyc50z8wEDfx0Olmo5WFN58ZGzFxiBY1ro6lVoSgbGEMcrineYgTjeUYLASDj4lLpWHPoIKA8hcgwCI3DeFLUcrKnchcovGIzAaSt0GReakoZpwQmOElXAIrDCLZZ8vgUYANCa63k2/DsoAAAAAElFTkSuQmCC") no-repeat;
+  background-size: 15px;
+  background-position: right 20px top 20px;
+  text-indent: 0.01px;
+  text-overflow: '';
+  font-family: "Montserrat"; }

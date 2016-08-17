@@ -1,0 +1,31 @@
+/*
+*
+* Slice v2
+* Created by @joericho
+*
+* Licensed under MIT
+* -------------------
+* Checkbox
+* -------------------
+*
+*/
+
+input[type="checkbox"] {
+    width: 32px;
+    height: 32px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type="checkbox"]:checked:after {
+    position: absolute;
+    color: #fff;
+    content: "\f00c";
+    font-family: FontAwesome;
+    font-size: 1.45em;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+}

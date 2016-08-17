@@ -1,0 +1,18 @@
+/*
+*
+* Slice v2
+* Created by @joericho
+*
+* Licensed under MIT
+* -------------------
+* Horizontal Rule
+* -------------------
+*
+*/
+
+hr {
+    background: rgba($color-black, 0.1);
+    border: 0;
+    height: 1px;
+    margin: $base-spacing-unit 0;
+}

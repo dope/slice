@@ -1,0 +1,53 @@
+/**
+*
+* Slice v2 — Licensed under MIT
+* Created & maintained by Joe Richardson
+* Documentation can be found in README.md
+* See below for the table of contents.
+*
+**/
+
+/**
+ * Config
+ * - All things configurable.
+ */
+@import 'config/vars';
+
+
+/**
+ * Base (non class stuff)
+ * - Reset
+ * - Color variables
+ * - Forms
+ * - Horizontal rule
+ * - Typography
+ */
+@import 'base/reset';
+@import 'base/colors';
+@import 'base/forms';
+@import 'base/hr';
+@import 'base/typography';
+
+/**
+ * Tools (mixins, help classes)
+ * - Clearfix
+ * - Placeholder
+ * - Helpers
+ */
+@import 'tools/clearfix';
+@import 'tools/placeholder';
+@import 'tools/helpers';
+
+/**
+ * Main components
+ * - Inputs
+ * - Radio Buttons
+ * - Checkboxes
+ * - Buttons
+ * - Dropdown
+ */
+@import 'components/default-input';
+@import 'components/radio-button';
+@import 'components/checkbox';
+@import 'components/buttons';
+@import 'components/dropdown';

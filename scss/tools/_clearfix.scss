@@ -1,0 +1,20 @@
+/*
+*
+* Slice v2
+* Created by @joericho
+*
+* Licensed under MIT
+* -------------------
+* Clearfix mixin
+* -------------------
+*
+*/
+
+.clearfix,
+%clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

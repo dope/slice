@@ -1,0 +1,41 @@
+/*
+*
+* Slice v2
+* Created by @joericho
+*
+* Licensed under MIT
+* -------------------
+* Colors
+* -------------------
+*
+*/
+$color-blue:   #00A4EE;
+$color-green:  #5AAC7B;
+$color-red:    #A9071E;
+$color-orange: #DC4E00;
+$color-yellow: #FACB47;
+$color-purple: #00A4EE;
+$color-black:  #913D88;
+$color-white:  #182945;
+
+$colors:
+    (blue, $color-blue),
+    (green, $color-green),
+    (red, $color-red),
+    (orange, $color-orange),
+    (yellow, $color-yellow),
+    (purple, $color-purple),
+    (black, $color-black),
+    (white, $color-white);
+
+@each $item, $color in $colors {
+    /* loop colors */
+    .c-#{$item} {
+        color: $color !important;
+    }
+
+    /* loop backgrounds */
+    .bg-#{$item} {
+        background: $color !important;
+    }
+}

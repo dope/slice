@@ -1,0 +1,17 @@
+/*
+*
+* Slice v2
+* Created by @joericho
+*
+* Licensed under MIT
+* -----------------
+* Placeholder mixin
+* -----------------
+*
+*/
+
+@mixin placeholder {
+    &.placeholder { @content }
+    &:-moz-placeholder { @content }
+    &::-webkit-input-placeholder { @content }
+}

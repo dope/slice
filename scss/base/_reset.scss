@@ -1,0 +1,26 @@
+/*
+*
+* Slice v2
+* Created by @joericho
+*
+* Licensed under MIT
+* -------------------
+* Base reset
+* -------------------
+*
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: $base-font-size;
+    font-family: $font;
+}
+
+a {
+    text-decoration: none;
+}

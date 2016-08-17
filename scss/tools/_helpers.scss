@@ -1,0 +1,51 @@
+/*
+*
+* Slice v2
+* Created by @joericho
+*
+* Licensed under MIT
+* -------------------
+* Help classes
+* -------------------
+*
+*/
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-center {
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
+
+.padding-big {
+    padding: 10px;
+}
+
+.padding-bigger {
+    padding: 20px;
+}
+
+.rounded {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.rounded-full {
+    border-radius: 100px;
+}
+
+.blue    { background: $color-blue   }
+.green   { background: $color-green  }
+.red     { background: $color-red    }
+.orange  { background: $color-orange }
+.yellow  { background: $color-yellow }
+.purple  { background: $color-purple }
+.black   { background: $color-blue   }
+.white   { background: $color-white  }

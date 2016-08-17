@@ -1,0 +1,33 @@
+{
+  "name": "slice",
+  "version": "2.0.0",
+  "description": "an elegant collection of form components",
+  "main": "slice.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dope/slice.git"
+  },
+  "keywords": [
+    "html",
+    "scss",
+    "ui",
+    "forms"
+  ],
+  "author": "Joe Richardson <joe@lifes.gd>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dope/slice/issues"
+  },
+  "homepage": "https://github.com/dope/slice#readme",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-sass": "^2.0.4"
+  }
+}

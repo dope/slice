@@ -1,0 +1,32 @@
+/*
+*
+* Slice v2
+* Created by @joericho
+*
+* Licensed under MIT
+* -------------------
+* Radio buttons
+* -------------------
+*
+*/
+
+input[type="radio"] {
+    width:32px;
+    height:32px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+
+input[type="radio"]:checked:after {
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
