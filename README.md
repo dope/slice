@@ -4,7 +4,7 @@ Slice
 Slice is an elegant collection of form components that can help you mock up web forms
 in minutes. It was built solely for convenience and speed but heck you can use it for whatever you want.
 
-####Includes:
+#### Includes:
 - Input
 - Textarea
 - Buttons
@@ -16,15 +16,15 @@ in minutes. It was built solely for convenience and speed but heck you can use i
 - Select Dropdown
 If you can think of anymore form elements that you want, then open an [issue](https://github.com/dope/slice/issues/new) or [contribute](https://github.com/dope/slice/fork).
 
-####Installation (lol, it's just css bro)
+#### Installation (lol, it's just css bro)
 No crazy setup, just link the slice.css stylesheet and you're ready to go.
 
 `<link rel="stylesheet" type="text/css" href="css/slice.css">`
 
-####Getting Started
+#### Getting Started
 Getting started couldn't be easier — once you've added the stylesheet then all you need to do is start adding the relevant mark up. I'm going to show you a few exmaples.
 
-#####The Mark up
+##### The Mark up
 Default text input `<input type="text" class="default-input" />`
 
 Default textarea `<textarea class="default-input">Hey</textarea>`
@@ -62,5 +62,5 @@ Checkbox `<input class="blue" type="checkbox" name="hi">`
 
 Radio Button `<input class="blue" type="radio" name="hi">`
 
-###Credits:
+### Credits:
 Icons by [Font Awesome](http://fontawesome.io)
